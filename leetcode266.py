@@ -11,13 +11,13 @@ class Solution:
     def is_palindrome(self,s):
         hashMap = self.frequency(s)
         count = 0
-        for k, v in hashMap.items():  # Correct iteration order
+        for k, v in hashMap.items(): 
             if v % 2 != 0:
                 count += 1
-        return count <= 1  # Direct boolean return
+        return count <= 1  
 
 # Example Usage
-solution = Solution()  # Create an instance of the class
-print(solution.is_palindrome("code"))  # Output: False
-print(solution.is_palindrome("aab"))   # Output: True
-print(solution.is_palindrome("carerac")) # Output: True
+solution = Solution()  
+print(solution.is_palindrome("code")) 
+print(solution.is_palindrome("aab"))  
+print(solution.is_palindrome("carerac")) 

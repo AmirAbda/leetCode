@@ -6,7 +6,7 @@ class TreeNode:
 
     def closest_Binary_Search(root, target):
         stack = [root]
-        closest_value = root.val  # Initialize closest_value
+        closest_value = root.val  
         diff_min = abs(root.val - target)
 
         while stack:
